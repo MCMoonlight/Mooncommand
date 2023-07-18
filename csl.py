@@ -1,6 +1,6 @@
 #模块
 from cslCommand import *
-
+from CSLinitialize import *
 #启动
 while True:
     #判断 

@@ -2,7 +2,7 @@ from csllogin import *
 from cslupdate import *
 
 def initialize():
-    verfile = open("version", "r")
+    verfile = open("https://github.com/publichealthmc/cslcommand/blob/main/version", "r")
     try:
         version = verfile.read()
     finally:
