@@ -15,5 +15,5 @@ def initialize():
         print("ok to run")
     else:
         cslupdate();
+    login();
     
-initialize()

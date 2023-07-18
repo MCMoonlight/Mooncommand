@@ -21,12 +21,12 @@ while True:
         help()
         continue
     elif link == "version":
-        print("pythoncmd version 0.1")
-        print("pythoncmdlink version 0.12.3")
+        print("csl command version 1.0.0")
+        print("csl commandbase version 0.0.1")
         continue
     elif link == "ver":
-        print("pythoncmd version 0.2")
-        print("pythoncmdlink version 0.12.4")
+        print("pythoncmd version 1.0.0")
+        print("pythoncmdlink version 0.0.1")
         continue
     elif link == "exit":
         print("bye")
