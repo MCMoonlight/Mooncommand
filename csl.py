@@ -1,10 +1,18 @@
 #模块
 from cslCommand import *
 from CSLinitialize import *
+import time
+#初始化
+initialize();
+print("初始化完成")
+time.sleep(100)
+os.system("cls")
+print("csl command [version 1.0.1]")
+print("MINCLS Team Corporation. 保留所有权利.")        
 #启动
 while True:
     #判断 
-    link = input("link command:")
+    link = input("command:")
     if link == "hello_world":
         hello_world()
         continue
@@ -21,12 +29,8 @@ while True:
         help()
         continue
     elif link == "version":
-        print("csl command version 1.0.0")
+        print("csl command version 1.0.1")
         print("csl commandbase version 0.0.1")
-        continue
-    elif link == "ver":
-        print("pythoncmd version 1.0.0")
-        print("pythoncmdlink version 0.0.1")
         continue
     elif link == "exit":
         print("bye")
@@ -37,8 +41,5 @@ while True:
     elif link == "ls":
         ls()
         continue   
-    elif link == "admin":
-        admin()
-        continue
     else:
         print("error: unknown command")    

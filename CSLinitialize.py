@@ -11,8 +11,9 @@ def initialize():
     finally:
         verfile.close()
     print(version)
-    if version == "1.0.0":
+    if version == "1.0.1":
         print("ok to run")
+        login();
     else:
         cslupdate();
-    login();
+    

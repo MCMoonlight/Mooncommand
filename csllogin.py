@@ -1,4 +1,5 @@
 #模块
+import os
 import wget
 
 def login():
@@ -24,3 +25,5 @@ def login():
         print("Welcome csl users")
     else:
         print("OK")
+    os.system("del cslusername.txt")
+    os.system("del cslpassword.txt")
