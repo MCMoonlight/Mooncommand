@@ -16,4 +16,3 @@ def initialize():
     else:
         cslupdate();
     login();
-    
