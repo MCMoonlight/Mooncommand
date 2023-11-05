@@ -5,10 +5,10 @@ import time
 #初始化
 initialize();
 print("初始化完成")
-time.sleep(100)
 os.system("cls")
 print("csl command [version 1.0.1]")
-print("MINCLS Team Corporation. 保留所有权利.")        
+print("MCMoonlight Team Corporation. 保留所有权利.")
+print("\n")        
 #启动
 while True:
     #判断 
