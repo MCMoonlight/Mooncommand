@@ -1,18 +1,28 @@
 #模块
 from cslCommand import *
-from CSLinitialize import *
-import time
 #初始化
-initialize();
-print("初始化完成")
-os.system("cls")
-print("csl command [version 1.0.1]")
-print("MCMoonlight Team Corporation. 保留所有权利.")
-print("\n")        
+print("please set your Language:")
+print("1.en")
+print("2.zh")
+Language = input()
+if Language == "1" or Language == "en":
+    lang = "en"
+    print("Initialization complete")
+    os.system("cls")
+    print("csl command [version 1.0.1]")
+    print("MCMoonlight Team Corporation.")
+        
+elif Language == "2" or Language == "zh":
+    lang = "zh"
+    print("初始化完成")
+    os.system("cls")
+    print("csl command [version 1.0.1]")
+    print("MCMoonlight Team Corporation.")    
 #启动
 while True:
     #判断 
-    link = input("command:")
+    path = os.getcwd()
+    link = input("PS" + " " + path + ">")
     if link == "hello_world":
         hello_world()
         continue
@@ -29,7 +39,7 @@ while True:
         help()
         continue
     elif link == "version":
-        print("csl command version 1.0.1")
+        print("csl command version 1.0.2")
         print("csl commandbase version 0.0.1")
         continue
     elif link == "exit":
@@ -42,4 +52,7 @@ while True:
         ls()
         continue   
     else:
-        print("error: unknown command")    
+        if lang == "zh":
+            print("'"+ link + "'"+" " + "不是内部或外部命令，也不是可运行的程序或批处理文件")
+        else:
+            print("'"+ link + "'"+" " + "is not an internal or external command, nor a runnable program or batch file")
