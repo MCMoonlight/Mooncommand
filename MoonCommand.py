@@ -9,14 +9,14 @@ if Language == "1" or Language == "en":
     lang = "en"
     print("Initialization complete")
     os.system("cls")
-    print("csl command [version 1.0.1]")
+    print("Moon command [version 1.0.2]")
     print("MCMoonlight Team Corporation.")
         
 elif Language == "2" or Language == "zh":
     lang = "zh"
     print("初始化完成")
     os.system("cls")
-    print("csl command [version 1.0.1]")
+    print("Moon command [version 1.0.2]")
     print("MCMoonlight Team Corporation.")    
 #启动
 while True:
@@ -39,8 +39,8 @@ while True:
         help()
         continue
     elif link == "version":
-        print("csl command version 1.0.2")
-        print("csl commandbase version 0.0.1")
+        print("Moon command version 1.0.2")
+        print("Moon commandbase version 0.0.1")
         continue
     elif link == "exit":
         print("bye")
@@ -53,6 +53,6 @@ while True:
         continue   
     else:
         if lang == "zh":
-            print("'"+ link + "'"+" " + "不是内部或外部命令，也不是可运行的程序或批处理文件")
+            print("'"+ link + "'"+" " + "不是内部或外部命令，也不是可运行的程序或批处理文件" + "\n")
         else:
-            print("'"+ link + "'"+" " + "is not an internal or external command, nor a runnable program or batch file")
+            print("'"+ link + "'"+" " + "is not an internal or external command, nor a runnable program or batch file" + "\n")
