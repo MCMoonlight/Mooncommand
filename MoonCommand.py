@@ -28,6 +28,12 @@ while True:
     elif link == "os":
         os_system()
         continue
+    elif link == "cls":
+        cls()
+    elif link == "clear":
+        clear()
+    elif ".exe" in link or ".lnk" in link or ".txt" in link or ".zip" in link:
+        os.system(link)
     elif link == "cpu_count":
         cpu_count()
         continue
