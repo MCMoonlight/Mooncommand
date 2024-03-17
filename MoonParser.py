@@ -1,5 +1,6 @@
 import ast
 import operator as op
+import os
 
 # supported operators
 operators = {ast.Add: op.add, ast.Sub: op.sub, ast.Mult: op.mul,
@@ -59,6 +60,7 @@ def parse_mo_file():
         try:
             # parse the code
             parse(code)
+            os.system('pause')
         except SyntaxError as e:
             print(e)
 
