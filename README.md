@@ -1,5 +1,7 @@
 # Mooncommand
 
+[**中文文档**](https://github.com/Xiaoshasha114/Mooncommand/blob/main/ZH_README.md) 
+
 **tip:**
 
 - there is no Modelica language in this project, text.mo is just an example for my parser
