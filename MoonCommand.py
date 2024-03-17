@@ -1,4 +1,6 @@
 #模块
+from logging import info
+import os
 from cslCommand import *
 #初始化
 print("please set your Language:")
@@ -41,7 +43,7 @@ while True:
         list()
         continue
     elif link == "version":
-        print("Moon command version 1.0.3")
+        print("Moon command version 1.1.3")
         print("Moon commandbase version 0.1.1")
         continue
     elif link == "exit":

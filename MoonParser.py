@@ -5,6 +5,8 @@ import operator as op
 operators = {ast.Add: op.add, ast.Sub: op.sub, ast.Mult: op.mul,
              ast.Div: op.truediv, ast.USub: op.neg}
 
+
+
 def mout(value):
     print(value)
     return value
@@ -44,11 +46,11 @@ def read_mo_file(file_path):
 def parse_mo_file():
     while True:
         # get the file path from user input
-        file_path = input("请输入你的.mo文件:")
+        file_path = input("Please enter your .mo file at:")
 
         # check if the file is a .mo file
         if not file_path.endswith('.mo'):
-            print("这不是一个.mo文件，请重新输入。")
+            print("This is not a .mo file, please retype it")
             continue
 
         # read the .mo file
